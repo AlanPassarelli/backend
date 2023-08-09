@@ -1,7 +1,7 @@
 import {promises as fs} from "fs"
 
 
-class productManager {
+export default class productManager {
 
     constructor () {
         this.patch = "./productos.txt"
@@ -72,20 +72,28 @@ let productModif = [{...producto, id }, ...produtOld];
 
 }
 
-const productos = new productManager ();
+// const productos = new productManager ();
 
 // productos.getProducts();
+
+
 // productos.addproduct ("titulo1", "description1",2000 , "sin imagen", "abc123", "20");
 // productos.addproduct ("titulo2", "description2",2000 , "sin imagen", "abc124", "22");
 // productos.addproduct ("titulo3", "description3",2000 , "sin imagen", "abc125", "23");
+// productos.addproduct ("titulo4", "description3",2000 , "sin imagen", "abc126", "25");
+// productos.addproduct ("titulo5", "description3",2000 , "sin imagen", "abc127", "26");
+// productos.addproduct ("titulo6", "description3",2000 , "sin imagen", "abc128", "27");
+// productos.addproduct ("titulo7", "description3",2000 , "sin imagen", "abc129", "28");
+// productos.addproduct ("titulo8", "description3",2000 , "sin imagen", "abc121", "29");
+// productos.addproduct ("titulo9", "description3",2000 , "sin imagen", "abc122", "21");
 // productos.getProductsById (4);
 // productos.deleteProductsById (3);
-productos.updateProducts ({
-    title: 'titulo1',
-    description: 'description1',
-    price: 8500,
-    thumbnail: 'sin imagen',
-    code: 'abc123',
-    stock: '20',
-    id: 3
-});
+// productos.updateProducts ({
+//     title: 'titulo1',
+//     description: 'description1',
+//     price: 8500,
+//     thumbnail: 'sin imagen',
+//     code: 'abc123',
+//     stock: '20',
+//     id: 3
+// });
